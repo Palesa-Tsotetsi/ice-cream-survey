@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+</head>
+<style>
+    h1{
+        color: rgb(180, 27, 194);
+        font-weight: 900;
+        font-style: oblique;
+        text-align: center;
+        font-family: sans-serif;
+        width: 800px;
+        
+    }
+    h2{
+        color: rgb(194, 194, 233);
+        background-color: beige;
+        font-weight: 700;
+        padding: 25px;
+        width: 800px;
+        text-align: center;
+        background-image: linear-gradient(to bottom,rgb(97, 45, 2),rgb(182, 147, 95));
+    }
+  
+    p{
+        color: bisque;
+        background-color: rgb(165, 97, 42);
+        font-size: large;
+        text-align: center;
+    }
+    button{
+        padding: 10px 10px;
+        background-color:rgb(165, 97, 42);
+        color: beige;
+        border-radius: 10px;
+        border-style: none;
+        transition: all 200ms ease;
+        box-shadow: 3px 3px;
+        display: inline-block;
+        cursor: pointer;
+        margin: 5px 2px;
+        font-size: medium;
+        
+    }
+    button:hover{
+        color: rgb(165, 97, 42);
+        background-color: beige;
+    }
+    img{
+        display: block;
+        margin: auto;  
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
+        align-items: center; /* Horizontally center content */
+        margin: 0px; /* Remove default body margin */
+    }
+    em{
+        font-weight: 700;
+        color: blueviolet;
+    }
+    div{
+        font-size: medium;
+        line-height: 1.6;
+    }
+
+</style>
+<body>
+    <h1>Ice Creamers &#x1F368;</h1>
+    <h2>Are you an Ice-Cream Fanatic?<br>If you answered "Yes"  
+        <br>you're at the right place!!! <br>If not you're still at the rightest place...</h2>
+    <hr>
+
+    <img src="https://www.halfbakedharvest.com/wp-content/uploads/2023/07/No-Churn-Chocolate-Malt-Oreo-Ice-Cream-1.jpg" 
+        alt="ice-cream" width="300">
+    
+        <div class="details">
+        <p><strong>FUN FACTS...</strong></p>
+            <span><em>Ice cream</em></span>  contains nutrients that are good for your immune system.
+            <span><em>Ice cream</em></span> can make you happier. 
+            People who had <span><em>ice cream</em></span> for breakfast were more alert than those who just had a glass of cold water because the vitamins and nutrients in ice cream can give your brain a boost.
+            <span><em>Ice cream</em></span> may help you recover from exercise
+    
+        <a href="https://www.floridamilk.com/in-the-news/blog/nutrition/8-reasons-everyone-loves-ice-cream.stml#:~:text=Ice%20cream%20contains%20nutrients%20that,for%20a%20healthy%20immune%20system." target="_blank">Read More Fun Fact here</a>
+         see also for
+        <a href="https://parenting.firstcry.com/articles/magazine-10-surprising-benefits-of-ice-cream/" target="_blank">More interesting Facts</a>
+    
+        </div>
+            <hr>
+            <button>Take Survey</button> <br>
+
+            Page built By Palesa Meteri Tsotetsi
+
+        <script>
+            function survey(){
+                let name =prompt("What is your name?");
+                let favIce =prompt("What's your favourite Ice cream flavor?");
+                let chance = prompt("How often do you buy Ice cream in a week?");
+                let love =prompt("What do you love mostly about ice cream?");
+                let email = prompt("Please enter your email address.");
+
+                if (name != null && favIce != null && chance != null && love != null && email != null) {
+                    if (chance == 0 || chance <= 3) {
+                        alert("Thank you for taking part in the survey " + name + ". Check your email, we've sent you a Free Ice Cream CODE. Just to say thank you!!!");
+                    } else {
+                        alert("Thank you for participating!!! Hope you continue spreading Ice cream love.");
+                    }
+                } else {
+                    alert("Thank you for participating!!! Hope you continue spreading Ice cream love.");
+                }
+            }
+            let takeSurveyButton= document.querySelector("button"); 
+            takeSurveyButton.addEventListener("click",survey)
+
+
+        </script>
+    </body>
+</html>
